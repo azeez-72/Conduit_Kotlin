@@ -7,6 +7,10 @@ android {
     compileSdkVersion 29
     buildToolsVersion "30.0.3"
 
+    buildFeatures{
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "io.realworld.conduit"
         minSdkVersion 26
@@ -49,4 +53,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //libraries
+    implementation project(":api")
 }
